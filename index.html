@@ -1,67 +1,389 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>El Acero</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="img" href="">
-    </head>
-    <body>
-
-        <header class="header">
-
-            <div class="logo">Menu</div>
-
-            <input type="checkbox" id="toggle">
-            <label for="toggle"><img src="img/menu.svg" alt="menu"></label>
-    
-            <nav class="navigation">
-    
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"referrerpolicy="no-referrer" />
+    <title>El Acero</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="https://www.youtube.com/@freddie-elacero/videos">El Acero</a>
+            </div>
+            <nav id="nav">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Músicas</a></li> 
-                    <li><a href="#">Letras</a>
-                        <ul>
-                            <li><a href="#">Dimelo Dios</a></li>
-                            <li><a href="#">Contigo mi vida</a></li>
-                            <li><a href="#">Adicto</a></li>
-                            <li><a href="#">No volvere</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">ESTADISTICAS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">CREACIONES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">UBICACIÓN</a></li>
                 </ul>
-    
             </nav>
-    
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
+    </div>
 
-        <div class="wrapper">
-            <h2>Video Clips</h2>
-            <hr>
-            <div class="members">
-                <div class="team-mem">
-                    <a href="https://youtu.be/NB4ZV6Yps7I?si=7SmU7uE_V1Yu-upP"><img src="img/contigomivida.webp"></a>
-                    <h4>Contigo mi vida</h4>
-                    <p>Freddie El Acero</p>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/acero.png" alt="">
+            </div>
+            <h1>Douglas Acero</h1>
+            <h2>Músico de Kumbias</h2>
+            <div class="redes">
+                <ul>
+                    <li style="--cl:#ff0095">
+                        <a href="https://www.instagram.com/cumbiaacero/?utm_source=qr&r=nametag"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li style="--cl:#ff0095">
+                        <a href="https://www.tiktok.com/@cumbia.acero?_t=8jAmJbeR058&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                    <li style="--cl:#43d854">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li style="--cl:#55acee">
+                        <a href="https://www.facebook.com/profile.php?id=61555500551900&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Douglas Acero.</span> Soy músico y empece en esto hace más de 4 años, por pacion y amor a la Kumbia.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            XX-XX-XXXX
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +591 60745305
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ElAcero@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://douglasacero1.github.io/
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Achcachicala La Paz, Bolivia
+                        </li>
+                        <li>
+                            <strong>Género musical</strong>
+                            <span>KUMBIA</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="team-mem">
-                    <a href="https://youtu.be/Nl-D-75PKWg?si=SsbHOnLqQdxXrq_B"><img src="img/adicto.webp"></a>
-                    <h4>Adicto</h4>
-                    <p>Freddie El Acero</p>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="team-mem">
-                    <a href="https://youtu.be/IQwEwKyhQrA?si=ThkH3rYdjKd487k6"><img src="img/novolvere.webp"></a>
-                    <h4>No volvere</h4>
-                    <p>Freddie El Acero</p>
-                </div>
-                <div class="team-mem">
-                    <a href="https://youtu.be/bRW898kns9E?si=eA8Hv-eDBb5U6bIe"><img src="img/dimelodios.webp"></a>
-                    <h4>Dimelo Dios</h4>
-                    <p>Freddie El Acero</p>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Estadisticas</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Creaciones</h3>
+                    <div class="skill">
+                        <span>Dimelo Dios</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Contigo mi Vida</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>No volvere</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adicto</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <script src="js/scrip.js"></script>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Contactos</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Freddie Douglas</h3>
+                    <div class="item izq">
+                        <h4>No volvere</h4>
+                        <span class="casa">Música</span>
+                        <span class="fecha">Visitas=2,3K</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Contigo mi Vida</h4>
+                        <span class="casa">Música</span>
+                        <span class="fecha">Visitas=1,2k</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Dímelo Dios</h4>
+                        <span class="casa">Músicas</span>
+                        <span class="fecha">Visitas=739</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Adicto</h4>
+                        <span class="casa">Músicas</span>
+                        <span class="fecha">Visitas=393</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Equipo</h3>
+                    <div class="item der">
+                        <h4>Cintya</h4>
+                        <span class="casa">Colaboladora</span>
+                        <span class="fecha">Llamame para algún contrato</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Patty</h4>
+                        <span class="casa">Organizadora</span>
+                        <span class="fecha">Encargada de la organización del evento</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Arminda</h4>
+                        <span class="casa">Repostera</span>
+                        <span class="fecha">Encargada del Alimento para el Evento</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Oscar</h4>
+                        <span class="casa">Chofer</span>
+                        <span class="fecha">Chofer del Cantante</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Creaciones y Show</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Adicto</h3>
+                        <p>Música</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dímelo Dios</h3>
+                        <p>Músicas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Contigo Mi Vida</h3>
+                        <p>Música</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>No Volvere</h3>
+                        <p>Música</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Preview</h3>
+                        <p>Ejm de Show's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>UBICACIÓN Y CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                La Paz, Bolivia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 60745305 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ElAcero@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes2">
+            <h1>---------------</h1>
+            <h2>| REDES SOCIALES |</h2>
+            <h1>---------------</h1>
+            <ul>
+                <li style="--cl:#ff0095">
+                    <a href="https://www.instagram.com/cumbiaacero/?utm_source=qr&r=nametag"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--cl:#ff0095">
+                    <a href="https://www.tiktok.com/@cumbia.acero?_t=8jAmJbeR058&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                </li>
+                <li style="--cl:#43d854">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li style="--cl:#55acee">
+                    <a href="https://www.facebook.com/profile.php?id=61555500551900&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
