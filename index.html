@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
-<body>
+<body onclick="PlayAudio">
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
@@ -292,32 +292,45 @@
                 <div class="proyecto">
                     <img src="img/G1.jpeg" alt="">
                     <div class="overlay">
-                        <h3>Adicto</h3>
+                        <h3>Dímelo Dios</h3>
                         <p>Música</p>
-                        <audio autoplay>
-                            <source src="audio/ContigoMiVidaMP3.mp3" type="audio/mpeg">
+                        <span class="space"></span>
+                        <audio autoplay controls>
+                            <source src="audio/DímeloDiosMP3.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
                 <div class="proyecto">
                     <img src="img/G2.jpeg" alt="">
                     <div class="overlay">
-                        <h3>Dímelo Dios</h3>
+                        <h3>Adicto</h3>
                         <p>Músicas</p>
+                        <span class="space"></span>
+                        <audio autoplay controls>
+                            <source src="audio/AdictoMP3.mp3">
+                        </audio>
                     </div>
                 </div>
                 <div class="proyecto">
                     <img src="img/G3.jpeg" alt="">
                     <div class="overlay">
-                        <h3>Contigo Mi Vida</h3>
+                        <h3>No volvere</h3>
                         <p>Música</p>
+                        <span class="space"></span>
+                        <audio autoplay controls>
+                            <source src="audio/No-VolvereMP3.mp3">
+                        </audio>
                     </div>
                 </div>
                 <div class="proyecto">
                     <img src="img/G4.jpeg" alt="">
                     <div class="overlay">
-                        <h3>No Volvere</h3>
+                        <h3>Contigo mi vida</h3>
                         <p>Música</p>
+                        <span class="space"></span>
+                        <audio id="musica1" autoplay controls>
+                            <source src="audio/ContigoMiVidaMP3.mp3">
+                        </audio>
                     </div>
                 </div>
                 <div class="proyecto">
@@ -325,6 +338,9 @@
                     <div class="overlay">
                         <h3>Preview</h3>
                         <p>Ejm de Show's</p>
+                        <video autoplay controls>
+                            <source src="video/Preview-Show.mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -403,5 +419,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="audio.js"></script>
 </body>
 </html>
