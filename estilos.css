@@ -949,3 +949,7 @@ button:hover i::after {
     box-shadow: #27272c;
   }
 }
+
+.space {
+    padding: 15px;
+}
