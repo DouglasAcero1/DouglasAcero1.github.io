@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="website icon" type="png" href="img/acero.png">
 </head>
-<body onclick="PlayAudio">
+<body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
@@ -20,11 +20,11 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">BIOGRAFÍA</a></li>
                     <li><a href="#skills" onclick="seleccionar()">ESTADISTICAS</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">FREDDY</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">CREACIONES</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">UBICACIÓN</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -63,32 +63,33 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, me llamo Freddy Douglas Acero.</span> Soy músico y empecé en esto hace más de 4 años, por pasión y amor a la Cumbia.</p>
+            <h2>Biografía</h2>
+            <p><span>Hola, me llamo Freddie Douglas Acero.</span> Soy músico y empecé en esto hace más de 5 años, por pasión y amor a la Cumbia.</p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3>Datos</h3>
                     <ul>
                         <li>
-                            <strong>Representante</strong>
-                            Cintya Geordana Acero
+                            <strong>Me llamo:</strong>
+                            Freddie Douglas Acero Quispe
                         </li>
                         <li>
-                            <strong>Celular</strong>
+                            <strong>Nombre artistico:</strong>
+                            El Acero
                         </li>
                         <li>
-                            <strong>Email</strong>
-                            ElAcero@gmail.com
+                            <strong>Nacido en:</strong>
+                            La Paz, Bolivia
                         </li>
                         <li>
-                            <strong>Website</strong>
-                            https://douglasacero1.github.io/
+                            <strong>Fecha de nacimiento</strong>
+                            20/09/1989
                         </li>
                         <li>
-                            <strong>Dirección</strong>
-                            Achcachicala La Paz, Bolivia
+                            <strong>Mis padres son:</strong>
+                            Rene Acero y Juana Quispe
                         </li>
                         <li>
                             <strong>Género musical</strong>
@@ -107,7 +108,7 @@
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                            <span>MÚSICA</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-plane"></i>
@@ -133,69 +134,6 @@
                     </div>
                 </div>
             </div>
-            <button>
-               <a href="audio/ContigoMiVidaMP3.mp3" download="Música_Audio"><span>Contigo mi vida (audio)</span> <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span></a>
-            </button>
-            <button>
-                <a href="audio/DímeloDiosMP3.mp3" download="Música_Audio"><span>Dímelo Dios (audio)</span> <i class="fa-solid fa-download"></i>
-                 <span class="overlay"></span></a>
-             </button>
-             <button>
-                <a href="audio/ContigoMiVidaMP3.mp3" download="Música_Audio"><span>Contigo mi vida (audio)</span> <i class="fa-solid fa-download"></i>
-                 <span class="overlay"></span></a>
-             </button>
-             <button>
-                <a href="audio/No-VolvereMP3.mp3" download="Música_Audio"><span>No volvere (audio)</span> <i class="fa-solid fa-download"></i>
-                 <span class="overlay"></span></a>
-             </button>
-        </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Estadisticas</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Creaciones</h3>
-                    <div class="skill">
-                        <span>Dímelo Dios</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Contigo mi Vida</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>No volvere</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Adicto</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
@@ -356,17 +294,6 @@
                         </audio>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/G5.jpeg" alt="">
-                    <div class="overlay">
-                        <h3>Preview</h3>
-                        <p>Ejm de Show's</p>
-                        <video autoplay controls>
-                            <source src="video/Preview-Show.mp4" type="video/mp4">
-                            tu navegador no es conpatible con videos de HTML:5
-                        </video>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -374,7 +301,7 @@
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-            <h2>UBICACIÓN Y CONTACTO</h2>
+            <h2>CONTACTO</h2>
             <div class="fila">
                 <!-- Formulario -->
                         <form action="https://formsubmit.co/bismarott1029@gmail.com" method="POST" class="col">
@@ -400,7 +327,7 @@
                        
                 <!-- Mapa -->
                 <div class="col">
-                    <img src="img/ubicacion.jpeg" alt="">
+                    <img src="img/bg.jpg" alt="">
                     <div class="info">
                         <ul>
                             <li>
@@ -427,15 +354,15 @@
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
-        <div class="redes2">
+        <div class="redes3">
   <!--   <button style="--clr:#EA00FF"><span>Button</span><i></i></button> -->
   <!-- <button style="--clr:#FFF01F"><span>Button</span><i></i></button> -->
   <!-- <button style="--clr:#7FFF00"><span>Button</span><i></i></button> -->
   <!-- <button style="--clr:#FF5E00"><span>Button</span><i></i></button> -->
-  <button style="--clr:#39FF14"><span>Freddi Douglas</span><i><a href="https://wa.me/59164847783"></a></i></button>
+  <button style="--clr:#39FF14"><a href="https://wa.me/59164847783"><span>Freddi Douglas</span><i></i></a></button>
   <!-- <button style="--clr:#FF3131"><span>Button</span><i></i></button> -->
   <!-- <button style="--clr:#1F51FF"><span>Button</span><i></i></button> -->
-  <button style="--clr:#FF44CC"><span>Cintya Geordana</span><i><a href="https://wa.me/59177791250"></a></i></button>
+  <button style="--clr:#FF44CC"><a href="https://wa.me/59177791250"><span>Cintya Geordana</span><i></i></a></button>
   <!-- <button style="--clr:#BC13FE"><span>Button</span><i></i></button> -->
   <!-- <button style="--clr:#E7EE4F"><span>Button</span><i></i></button> -->
   <!-- <button style="--clr:#FF1493"><span>Button</span><i></i></button> -->
