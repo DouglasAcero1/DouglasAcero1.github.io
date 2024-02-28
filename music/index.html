@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/music/style.css">
+    <title>Douglas</title>
+</head>
+
+    <body>
+        <div class="album-cover">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/img/G1.jpeg" />
+                <div class="overlay">
+                  <a
+                    href="https://youtu.be/bRW898kns9E?si=hcNq9N8SF93jxN2D"
+                    target="_blank"
+                    ><ion-icon name="logo-youtube"></ion-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/img/G2.jpeg" />
+                <div class="overlay">
+                  <a
+                    href="https://youtu.be/Nl-D-75PKWg?si=dn5_bJfYeR--F_1x"
+                    target="_blank"
+                    ><ion-icon name="logo-youtube"></ion-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/img/G3.jpeg" />
+                <div class="overlay">
+                  <a
+                    href="https://youtu.be/IQwEwKyhQrA?si=leaaSTsNsn_3-XuB"
+                    target="_blank"
+                    ><ion-icon name="logo-youtube"></ion-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/img/G4.jpeg" />
+                <div class="overlay">
+                  <a
+                    href="https://youtu.be/NB4ZV6Yps7I?si=F3OkqX3LNvUDmtha"
+                    target="_blank"
+                    ><ion-icon name="logo-youtube"></ion-icon
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="music-player">
+          <h1>Title</h1>
+          <p>Song Name</p>
+    
+          <audio id="song">
+            <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
+          </audio>
+    
+          <input type="range" value="0" id="progress" />
+    
+          <div class="controls">
+            <button class="backward">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="play-pause-btn">
+              <i class="fa-solid fa-play" id="controlIcon"></i>
+            </button>
+            <button class="forward">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="/music/main.js"></script>
+      </body>
+
+
+</html>
